@@ -1,0 +1,336 @@
+/* ==========================================================
+   KONMEL WEBSITE
+   Version: 1.0
+   Author: Aleksandar Melev & OpenAI
+========================================================== */
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* ==========================================================
+   ROOT
+========================================================== */
+
+:root{
+
+    --primary:#61B046;
+    --primary-dark:#3C8D2F;
+
+    --secondary:#1F2937;
+
+    --text:#4B5563;
+
+    --light:#F8FAFC;
+
+    --white:#FFFFFF;
+
+    --border:#E5E7EB;
+
+    --container:1200px;
+
+    --radius:18px;
+
+    --transition:.30s ease;
+
+}
+
+
+/* ==========================================================
+   HTML
+========================================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+
+    font-family:"Manrope",sans-serif;
+
+    background:var(--white);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+}
+
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+
+/* ==========================================================
+   LIST
+========================================================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+
+    width:min(92%,var(--container));
+
+    margin:auto;
+
+}
+
+
+/* ==========================================================
+   SECTIONS
+========================================================== */
+
+section{
+
+    padding:100px 0;
+
+}
+
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+h1{
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+    color:var(--secondary);
+
+    margin-bottom:30px;
+
+}
+
+h2{
+
+    font-size:2.8rem;
+
+    color:var(--secondary);
+
+    margin-bottom:30px;
+
+}
+
+h3{
+
+    font-size:1.5rem;
+
+    color:var(--secondary);
+
+}
+
+p{
+
+    margin-bottom:20px;
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 34px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+    cursor:pointer;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    border-bottom:1px solid var(--border);
+
+    z-index:1000;
+
+}
+
+header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:82px;
+
+}
+
+
+/* ==========================================================
+   MAIN
+========================================================== */
+
+main{
+
+    padding-top:82px;
+
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+
+    padding:60px 0;
+
+    background:#111827;
+
+    color:white;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:900px){
+
+    h1{
+
+        font-size:3rem;
+
+    }
+
+    h2{
+
+        font-size:2.2rem;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    h1{
+
+        font-size:2.4rem;
+
+    }
+
+    h2{
+
+        font-size:1.9rem;
+
+    }
+
+}
