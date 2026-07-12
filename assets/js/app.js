@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initStickyHeader();
     initActiveNavigation();
     initRevealAnimation();
-    initContactForm();
 
 });
 
@@ -140,36 +139,89 @@ function initRevealAnimation() {
    Contact Form
 ========================================== */
 
-function initContactForm() {
+/* ==========================================================
+   FOOTER
+========================================================== */
 
-    const form = document.querySelector(".contact-form");
+footer{
 
-    if (!form) return;
+    background:#1f2937;
 
-    form.addEventListener("submit", function (e) {
+    color:#fff;
 
-        e.preventDefault();
-
-        const name = form.querySelector('input[type="text"]');
-        const email = form.querySelector('input[type="email"]');
-        const message = form.querySelector("textarea");
-
-        if (
-            name.value.trim() === "" ||
-            email.value.trim() === "" ||
-            message.value.trim() === ""
-        ) {
-
-            alert("Molimo popunite sva obavezna polja.");
-
-            return;
-
-        }
-
-        alert("Hvala! Vaša poruka je uspešno pripremljena za slanje.");
-
-        form.reset();
-
-    });
+    padding:70px 0 30px;
 
 }
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:60px;
+
+    margin-bottom:50px;
+
+}
+
+.footer-logo{
+
+    height:55px;
+
+    margin-bottom:25px;
+
+}
+
+.footer-column h3{
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+    font-size:1.2rem;
+
+}
+
+.footer-column ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.footer-column a{
+
+    color:#fff;
+
+    transition:.3s;
+
+}
+
+.footer-column a:hover{
+
+    color:var(--primary);
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    padding-top:25px;
+
+    text-align:center;
+
+}
+
+.footer-bottom p{
+
+    margin:0;
+
+    color:#d1d5db;
+
+}
+
