@@ -1243,3 +1243,78 @@ git commit -m "Redesign footer"
     margin-top:25px;
 
 }
+
+/* ==========================================================
+   BACK TO TOP
+========================================================== */
+
+#backToTop{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.20);
+
+    z-index:9999;
+
+}
+
+#backToTop:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+#backToTop.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus{
+
+    outline:3px solid rgba(97,176,70,.25);
+
+    outline-offset:3px;
+
+}
