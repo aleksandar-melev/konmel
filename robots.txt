@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://aleksandar-melev.github.io/konmel/sitemap.xml
